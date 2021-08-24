@@ -34,3 +34,9 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+    - uses: akhileshns/heroku-deploy@v3.0.0
+            with:
+              heroku_api_key: ${{secrets.tratamientodatos}}
+              heroku_app_name: "tratamientodatos"
+              heroku_email: "blancodav@gmail.com"
+              usedocker: false
