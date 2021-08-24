@@ -39,4 +39,5 @@ jobs:
               heroku_api_key: ${{secrets.TRATAMIENTODATOS}}
               heroku_app_name: "tratamientodatos"
               heroku_email: ${{secrets.MAILTRATAMIENTODATOS}}
+              buildpack: 'heroku/python'
               usedocker: false
